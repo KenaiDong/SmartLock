@@ -1,0 +1,24 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+server:
+  port: 9091
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 300000ms
+  application:
+    name: apigeteway
+ribbon:
+  eureka:
+    enable: false
+user:
+  service:
+    name: user
+
